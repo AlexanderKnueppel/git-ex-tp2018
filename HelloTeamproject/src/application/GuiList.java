@@ -13,7 +13,7 @@ import javax.swing.event.ListSelectionListener;
 public class GuiList extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	private String label[] = { "Thomas", "Alex" };
+	private String label[] = { "Thomas", "Alex", "Paul",  "Joshua", "Chico"};
 
 	private JList<String> list;
 
@@ -31,7 +31,7 @@ public class GuiList extends JPanel {
 
 		list.addListSelectionListener(new ListSelectionListener() {
 			public void valueChanged(ListSelectionEvent e) {
-				System.out.println(e.toString());
+				System.out.println("[Values changed]");
 			}
 		});
 
